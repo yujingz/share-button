@@ -1,0 +1,18 @@
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  background-color: #E5EEF3;
+}
+
+.ripple.animating {
+  animation: ripple 0.5s linear;
+}
+
+@keyframes ripple {
+  100% {
+    transform: scale(3);
+    opacity: 0.0;
+  }
+}
